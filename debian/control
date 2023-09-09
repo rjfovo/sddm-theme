@@ -24,7 +24,7 @@ Depends: qml-module-qtquick-controls2,
          qml-module-qtquick-window2,
          qml-module-qtquick-shapes,
          qml-module-qtquick-dialogs,
-         sddm,
+         # sddm, debian安装时，会安装大量不需要的软件，所以不在这里进行安装通过下载软件包单独安装
          ${misc:Depends},
          ${shlibs:Depends}
 Description: CutefishOS Calculator
