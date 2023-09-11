@@ -24,6 +24,7 @@ Depends: qml-module-qtquick-controls2,
          qml-module-qtquick-window2,
          qml-module-qtquick-shapes,
          qml-module-qtquick-dialogs,
+         sddm,
          ${misc:Depends},
          ${shlibs:Depends}
 Description: CutefishOS Calculator
