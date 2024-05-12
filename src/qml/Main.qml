@@ -173,7 +173,7 @@ Item {
                 Layout.alignment: Qt.AlignHCenter
                 Layout.preferredHeight: 40
                 Layout.preferredWidth: 260
-                placeholderText: qsTr("Password")
+                placeholderText: textConstants.password
                 focus: true
                 selectByMouse: true
                 echoMode: TextInput.Password
@@ -196,7 +196,7 @@ Item {
                 Layout.alignment: Qt.AlignHCenter
                 Layout.preferredHeight: 40
                 Layout.preferredWidth: 260
-                text: qsTr("Login")
+                text:  textConstants.login
                 onClicked: root.startLogin()
 
                 scale: unlockBtn.pressed ? 0.95 : 1.0
@@ -264,19 +264,19 @@ Item {
         id: actionMenu
 
         QQC2.MenuItem {
-            text: qsTr("Suspend")
+            text: textConstants.suspend
             onClicked: sddm.suspend()
             visible: sddm.canSuspend
         }
 
         QQC2.MenuItem {
-            text: qsTr("Reboot")
+            text: textConstants.reboot
             onClicked: sddm.reboot()
             visible: sddm.canReboot
         }
 
         QQC2.MenuItem {
-            text: qsTr("Shutdown")
+            text: textConstants.shutdown
             onClicked: sddm.powerOff()
             visible: sddm.canPowerOff
         }
